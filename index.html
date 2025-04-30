@@ -4,22 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon Market</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li id="home"><a href="index.html">Home</a></li>
-          <li id="announce"><a href="announce.html">Anunciar</a></li>
+  <body class="home-page">
+    <header class="header">
+      <nav class="header__nav">
+        <span class="header__logo">
+          <a href="index.html">
+            <img
+              src="assets/images/pokeball-pokemon-svgrepo-com.svg"
+              alt="imagem de uma pokebola"
+            />
+          </a>
+        </span>
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="index.html">Home</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="ads.html">Ver anúncios</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link header__menu-link--color" href="announce.html"
+              >Anunciar</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <main id="main-home">
-      <section id="card-galery">
-        <article class="item-galery"></article>
-        <article class="item-galery"></article>
+
+    <main class="home-main">
+      <section class="gallery">
+        <article class="gallery__item"></article>
+        <article class="gallery__item"></article>
       </section>
     </main>
-    <footer id="footer"></footer>
+
+    <footer class="footer"></footer>
   </body>
 </html>
