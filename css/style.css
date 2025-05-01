@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 /* === BLOCO: header === */
@@ -32,11 +33,14 @@
 .header__menu-link {
   color: #202020;
   text-decoration: none;
+  font-size: 16px;
   border: 2px solid #cfd4dd;
   cursor: pointer;
   padding: 1rem 1.5rem;
   border-radius: 2rem;
+  transition: border 0.1s;
 }
+
 .header__menu-link--color {
   border-style: none;
   color: white;
@@ -58,3 +62,5 @@
 /* === BLOCO: footer === */
 .footer {
 }
+
+/* === BLOCO: pseudo classes/elementos */
