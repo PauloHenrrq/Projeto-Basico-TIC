@@ -1,0 +1,60 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === BLOCO: header === */
+.header {
+  background-color: transparent;
+  border-bottom: 1px solid #cfd4dd;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+.header__logo img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.header__menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.header__menu-link {
+  color: #202020;
+  text-decoration: none;
+  border: 2px solid #cfd4dd;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+}
+.header__menu-link--color {
+  border-style: none;
+  color: white;
+  background-color:  #d3250f;
+  
+}
+
+/* === BLOCO: home-main === */
+.home-main {
+}
+
+/* === BLOCO: gallery === */
+.gallery {
+}
+
+.gallery__item {
+}
+
+/* === BLOCO: footer === */
+.footer {
+}
