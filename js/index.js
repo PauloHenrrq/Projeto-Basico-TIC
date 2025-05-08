@@ -1,8 +1,29 @@
-
 // =============================
 // Seção 1 - Validação do Formulário
 // =============================
+
 const form = document.getElementById("form");
+
+const priceInput = document.getElementById("price-input");
+
+priceInput.addEventListener("blur", (e) => {
+  let price = e.target.value;
+  price = price.replace(/[^\d,.]/g, "").replace(",", ".");
+
+  const number = parseFloat(price);
+
+  if (!isNaN(number)) {
+    const format = new Intl.NumberFormat("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+    }).format(number);
+
+    e.target.value = format;
+  } else {
+    e.target.value = "";
+  }
+});
+
 form.addEventListener("submit", (e) => {
   let hasError = false;
 
@@ -12,8 +33,12 @@ form.addEventListener("submit", (e) => {
       message: "O título deve ter pelo menos 4 caracteres.",
     },
     "price-input": {
-      validate: (value) => /^\d+([.,]\d{1,2})?$/.test(value),
-      message: "Digite um valor numérico válido (ex: 10 ou 10,50).",
+      validate: (value) => {
+        value = value.replace(/[^\d,]/g, "").replace(",", ".");
+        value = parseFloat(value);
+        return !isNaN(value);
+      },
+      message: "Digite um valor numérico válido (ex: 10 ou 99,50).",
     },
     "description-input": {
       validate: (value) => value.trim().length >= 10,
@@ -38,8 +63,8 @@ form.addEventListener("submit", (e) => {
       message: "Digite um email válido.",
     },
     "whatsapp-input": {
-      validate: (value) => value.trim() === "" || value.replace(/\D/g, "").length >= 11,
-      message: "Digite um número de WhatsApp válido com pelo menos 11 dígitos.",
+      validate: (value) => value.trim() === "" || value.replace(/\D/g, "").length == 11,
+      message: "Digite um número de WhatsApp válido com 11 dígitos (DD+ 9 digitos).",
     },
   };
 
@@ -62,9 +87,12 @@ form.addEventListener("submit", (e) => {
       );
       messageElement = inputField.querySelector(".announce-main__form-error-message");
     } else {
-      if (!inputField) return;
-      const value = id === "image-input" ? inputField : inputField.value;
-      isValid = validator.validate(value);
+      if (id === "image-input") {
+        isValid = validator.validate(inputField);
+      } else {
+        isValid = validator.validate(inputField.value);
+      }
+   
 
       messageElement = inputField.parentElement.querySelector(".announce-main__form-error-message");
     }
