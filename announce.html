@@ -43,7 +43,9 @@
             required
             autofocus
           />
+          <small class="announce-main__form-error-message"></small>
         </div>
+
         <div class="announce-main__form-group">
           <label class="announce-main__form-label" for="price-input">Preço</label>
           <input
@@ -53,7 +55,9 @@
             type="text"
             required
           />
+          <small class="announce-main__form-error-message"></small>
         </div>
+
         <div class="announce-main__form-group">
           <label class="announce-main__form-label" for="description-input">Descrição</label>
           <textarea
@@ -63,7 +67,9 @@
             placeholder="Descreva a carta: edição, condição, idioma, raridade, etc."
             required
           ></textarea>
+          <small class="announce-main__form-error-message"></small>
         </div>
+
         <div class="announce-main__form-group">
           <label class="announce-main__form-label" for="image-input">Imagem da Carta</label>
           <input
@@ -74,10 +80,12 @@
             accept="image/*"
             required
           />
+          <small class="announce-main__form-error-message"></small>
         </div>
-        <fieldset>
-          <legend>Você deseja:</legend>
 
+        <fieldset id="intention-fieldset">
+          <small class="announce-main__form-error-message"></small>
+          <legend>Você deseja:</legend>
           <div class="announce-main__form-group">
             <label for="sell-checkbox">
               <input
@@ -101,13 +109,15 @@
             </label>
           </div>
         </fieldset>
-        <fieldset>
-          <legend>Contatos</legend>
 
+        <fieldset id="contact-fieldset">
+          <small class="announce-main__form-error-message"></small>
+          <legend>Contatos</legend>
           <div class="announce-main__form-group">
             <div>
               <label class="announce-main__form-label" for="email-input">Email</label>
               <input class="announce-main__form-input" id="email-input" name="email" type="email" />
+              <small class="announce-main__form-error-message"></small>
             </div>
 
             <div>
@@ -117,10 +127,13 @@
                 id="whatsapp-input"
                 name="whatsapp"
                 type="tel"
+                placeholder="exemplo: 85912345678"
               />
+              <small class="announce-main__form-error-message"></small>
             </div>
           </div>
         </fieldset>
+
         <button type="submit">Postar anuncio</button>
       </form>
     </main>
