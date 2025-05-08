@@ -25,20 +25,107 @@
             <a class="header__menu-link" href="ads.html">Ver anúncios</a>
           </li>
           <li class="header__menu-item">
-            <a
-              class="header__menu-link header__menu-link--color"
-              href="announce.html"
-              >Anunciar</a
-            >
+            <a class="header__menu-link header__menu-link--color" href="announce.html">Anunciar</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="announce-main">
-      <form id="form" class="announce-main__form"></form>
+      <form id="form" class="announce-main__form">
+        <div class="announce-main__form-group">
+          <label class="announce-main__form-label" for="title-input">Título</label>
+          <input
+            class="announce-main__form-input"
+            id="title-input"
+            name="title"
+            type="text"
+            required
+            autofocus
+          />
+        </div>
+        <div class="announce-main__form-group">
+          <label class="announce-main__form-label" for="price-input">Preço</label>
+          <input
+            class="announce-main__form-input"
+            id="price-input"
+            name="price"
+            type="text"
+            required
+          />
+        </div>
+        <div class="announce-main__form-group">
+          <label class="announce-main__form-label" for="description-input">Descrição</label>
+          <textarea
+            class="announce-main__form-textarea"
+            id="description-input"
+            name="description"
+            placeholder="Descreva a carta: edição, condição, idioma, raridade, etc."
+            required
+          ></textarea>
+        </div>
+        <div class="announce-main__form-group">
+          <label class="announce-main__form-label" for="image-input">Imagem da Carta</label>
+          <input
+            class="announce-main__form-input"
+            id="image-input"
+            name="card-image"
+            type="file"
+            accept="image/*"
+            required
+          />
+        </div>
+        <fieldset>
+          <legend>Você deseja:</legend>
+
+          <div class="announce-main__form-group">
+            <label for="sell-checkbox">
+              <input
+                id="sell-checkbox"
+                class="announce-main__form-input"
+                name="intention"
+                type="checkbox"
+                value="trade"
+              />
+              Vender
+            </label>
+            <label for="trade-checkbox">
+              <input
+                id="trade-checkbox"
+                class="announce-main__form-input"
+                name="intention"
+                type="checkbox"
+                value="sell"
+              />
+              Trocar
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Contatos</legend>
+
+          <div class="announce-main__form-group">
+            <div>
+              <label class="announce-main__form-label" for="email-input">Email</label>
+              <input class="announce-main__form-input" id="email-input" name="email" type="email" />
+            </div>
+
+            <div>
+              <label class="announce-main__form-label" for="whatsapp-input">WhatsApp</label>
+              <input
+                class="announce-main__form-input"
+                id="whatsapp-input"
+                name="whatsapp"
+                type="tel"
+              />
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit">Postar anuncio</button>
+      </form>
     </main>
 
     <footer class="footer"></footer>
+    <script src="/js/index.js"></script>
   </body>
 </html>
