@@ -185,3 +185,76 @@ button[type="submit"]:active {
   background-color: #9b1d0a;
   border-color: #9b1d0a;
 }
+
+
+/* ADS PAGE : CARD STYLE TEST */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-price {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+.card-image {
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+.card-contact {
+  margin-top: 15px;
+}
+
+.card-email,
+.card-whatsapp {
+  font-size: 0.9rem;
+  color: #4CAF50;
+  margin: 5px 0;
+}
