@@ -40,8 +40,7 @@
 .header__menu-link--color {
   border-style: none;
   color: white;
-  background-color:  #d3250f;
-  
+  background-color: #d3250f;
 }
 
 /* === BLOCO: home-main === */
@@ -59,135 +58,12 @@
 .footer {
 }
 
-
-/* === BLOCO: announce-main === */
-
-/* Estilização do container principal */
-.announce-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f0f0f0;
-  padding: 1rem;
-}
-
-/* Estilização geral do formulário */
-.announce-main__form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  width: 100%;
-  max-width: 600px;
-  padding: 1.5rem;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilização dos grupos do formulário */
-.announce-main__form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.announce-main__form-label {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #333;
-}
-
-.announce-main__form-input,
-.announce-main__form-textarea {
-  padding: 1rem;
-  font-size: 1rem;
-  border: 2px solid #cfd4dd;
-  border-radius: 0.5rem;
-  background-color: #fff;
-  color: #333;
-  transition: border-color 0.3s ease;
-}
-
-.announce-main__form-input:focus,
-.announce-main__form-textarea:focus {
-  outline: none;
-  border-color: #d3250f;
-}
-
-/* Estilização do campo de erro */
-.announce-main__form-error-message {
-  font-size: 0.875rem;
-  color: #ff4d4d;
-  margin-top: 0.25rem;
-}
-
-/* Estilização do campo de seleção de intenção */
-#intention-fieldset {
-  border: none;
-  padding: 0;
-}
-
-#intention-fieldset legend {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.announce-main__form-group input[type="checkbox"] {
-  margin-right: 0.5rem;
-}
-
-.announce-main__form-group label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Estilização do campo de contatos */
-#contact-fieldset {
-  border: none;
-  padding: 0;
-}
-
-#contact-fieldset legend {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-#contact-fieldset .announce-main__form-group div {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-/* Estilização do botão de envio */
-button[type="submit"] {
-  padding: 1rem;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #fff;
-  background-color: #d3250f;
-  border: 2px solid #d3250f;
-  border-radius: 2rem;
-  cursor: pointer;
-  transition: background-color 0.3s, border-color 0.3s;
-}
-
-button[type="submit"]:hover {
-  background-color: white;
-  color: #d3250f;
-  border-color: #d3250f;
-}
-
-button[type="submit"]:active {
-  background-color: #9b1d0a;
-  border-color: #9b1d0a;
-}
+/* === ANNOUNCE PAGE: announce-main FORM === */
 
 
-/* ADS PAGE : CARD STYLE TEST */
+/*===FIM DE BLOCO ===*/
+
+/* === ADS PAGE : CARD STYLE *TEST* ===*/
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -196,7 +72,7 @@ body {
 }
 
 header {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   text-align: center;
   padding: 20px;
@@ -255,6 +131,6 @@ h1 {
 .card-email,
 .card-whatsapp {
   font-size: 0.9rem;
-  color: #4CAF50;
+  color: #4caf50;
   margin: 5px 0;
 }

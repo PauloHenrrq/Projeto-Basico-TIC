@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const allData = JSON.parse(localStorage.getItem("formData")) || [];
 
   allData.forEach((data) => {
-    createCard(data); // Cria e exibe o card para cada item armazenado
+    createCard(data); 
   });
 });
 

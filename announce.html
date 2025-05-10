@@ -33,7 +33,7 @@
 
     <main class="announce-main">
       <form id="form" class="announce-main__form">
-        <div class="announce-main__form-group">
+        <div id="title-container" class="announce-main__form-group">
           <label class="announce-main__form-label" for="title-input">Título</label>
           <input
             class="announce-main__form-input"
@@ -46,9 +46,9 @@
           <small class="announce-main__form-error-message"></small>
         </div>
 
-        <div class="announce-main__form-group">
+        <div id="price-container" class="announce-main__form-group">
           <label class="announce-main__form-label" for="price-input">Preço</label>
-        
+
           <input
             class="announce-main__form-input"
             id="price-input"
@@ -60,7 +60,7 @@
           <small class="announce-main__form-error-message"></small>
         </div>
 
-        <div class="announce-main__form-group">
+        <div id="description-container" class="announce-main__form-group">
           <label class="announce-main__form-label" for="description-input">Descrição</label>
           <textarea
             class="announce-main__form-textarea"
@@ -72,7 +72,7 @@
           <small class="announce-main__form-error-message"></small>
         </div>
 
-        <div class="announce-main__form-group">
+        <div id="image-container" class="announce-main__form-group">
           <label class="announce-main__form-label" for="image-input">Imagem da Carta</label>
           <input
             class="announce-main__form-input"
@@ -85,10 +85,10 @@
           <small class="announce-main__form-error-message"></small>
         </div>
 
-        <fieldset id="intention-fieldset">
+        <fieldset id="intention-fieldset" class="announce-main__form-fieldset intention-fieldset">
           <small class="announce-main__form-error-message"></small>
           <legend>Você deseja:</legend>
-          <div class="announce-main__form-group">
+          <div class="intention-fieldset__checkbox-input-div">
             <label for="sell-checkbox">
               <input
                 id="sell-checkbox"
@@ -112,7 +112,7 @@
           </div>
         </fieldset>
 
-        <fieldset id="contact-fieldset">
+        <fieldset id="contact-fieldset" class="announce-main__form-fieldset">
           <small class="announce-main__form-error-message"></small>
           <legend>Contatos</legend>
           <div class="announce-main__form-group">
