@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 /* === BLOCO: header === */
@@ -36,12 +37,25 @@
   cursor: pointer;
   padding: 1rem 1.5rem;
   border-radius: 2rem;
+  transition: background-color 0.3s, color 0.3s;
 }
+
+/* Hover */
+.header__menu-link:hover:not(.header__menu-link--color) {
+  background-color: #a1a1a1;
+  color: white;
+}
+
 .header__menu-link--color {
   border-style: none;
   color: white;
-  background-color:  #d3250f;
-  
+  background-color: #d3250f;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header__menu-link--color:hover {
+  background-color: #a11c0c;
+  color: white;
 }
 
 /* === BLOCO: home-main === */
@@ -56,5 +70,194 @@
 }
 
 /* === BLOCO: footer === */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__team-col p {
+  font-size: 30px; /* Tava 12px, agora um pouquinho maior */
+}
+
+.footer__right {
+  padding-right: 16px; /* Afasta o "Siga-nos" da borda direita */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinha os itens à direita */
+  text-align: center; /* Centraliza o texto dentro da coluna */
+}
+
+.footer__right h4 {
+  margin-bottom: 10px; /* Espaçamento entre título e ícones */
+}
+
+.footer__social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaçamento entre os ícones */
+  align-items: center; /* Centraliza os ícones na coluna */
+}
+
+.footer__social-link {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 4px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer__social-link:hover {
+  background-color: #f1c40f;
+  color: #c0392b;
+}
+
+.footer__team-columns {
+  display: flex;
+  justify-content: space-between; /* Aqui o truque */
+  width: 100%;
+}
+
+.footer__left {
+  padding-left: 150px; /* Afasta da esquerda */
+  max-width: 350px;
+}
+
+.footer__right {
+   padding-right: 150px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__section h4 {
+  text-align: center; /* Centraliza o título */
+  margin: 0 0 10px; /* Um espacinho embaixo do título */
+}
+
 .footer {
+  background: linear-gradient(135deg, #b90000, #f1492b);
+  color: white;
+  padding: 8px 16px; /* Menos padding */
+  font-family: 'Arial', sans-serif;
+  font-size: 12px; /* Fonte mais enxuta */
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 6px;
+}
+
+.footer__section {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer__section h4 {
+  margin: 0 0 4px;
+  font-size: 13px;
+  color: #f1c40f;
+}
+
+.footer__section p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.footer__team-columns {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__team-col {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.footer__social-links {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaçamento entre os ícones */
+  align-items: center; /* Centraliza os ícones */
+}
+
+.footer__social-link {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 4px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer__social-link:hover {
+  background-color: #f1c40f;
+  color: #c0392b;
+}
+
+.footer__copyright {
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 0;
+  color: #fff;
+}
+
+.footer__nav {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 4px;
+  margin-top: 6px;
+}
+
+.footer__menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__menu-link {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s;
+}
+
+.footer__menu-link:hover {
+  color: #f1c40f;
+}
+
+@media (max-width: 600px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__section {
+    margin-bottom: 8px;
+  }
 }
