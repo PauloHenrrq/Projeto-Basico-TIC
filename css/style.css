@@ -65,6 +65,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 1rem;
 }
 
 .announce-main__form {
@@ -102,7 +103,13 @@
 
 .announce-main__form-textarea {
   resize: none;
+  font-family: unset;
   min-height: 100px;
+}
+.announce-main__form-input:focus,
+.announce-main__form-textarea:focus {
+  outline: none;
+  border: 2px solid #d63523;
 }
 
 .announce-main__form-error-message {
@@ -133,15 +140,18 @@
   flex: 0 0 5rem;
 }
 
-.main__form-input-intention {
+.announce-main__form-input-intention {
   width: 1rem;
   height: 1rem;
   cursor: pointer;
 }
+.announce-main__form-input-intention:checked {
+  accent-color: #d63523;
+}
 
 .announce-main__form-button {
   padding: 0.75rem;
-  background-color: #007bff;
+  background-color: #d63523;
   color: white;
   font-size: 1rem;
   border: none;
@@ -151,11 +161,7 @@
 }
 
 .announce-main__form-button:hover {
-  background-color: #0056b3;
-}
-
-/* Responsividade */
-@media (min-width: 600px) {
+  background-color: #b61908;
 }
 
 /*===FIM DE BLOCO ===*/
