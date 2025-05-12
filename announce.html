@@ -54,7 +54,7 @@
             id="price-input"
             name="price"
             type="text"
-            placeholder="R$ 0,00"
+            placeholder="R$ 0,00"
             required
           />
           <small class="announce-main__form-error-message"></small>
@@ -87,42 +87,47 @@
 
         <fieldset id="intention-fieldset" class="announce-main__form-fieldset intention-fieldset">
           <small class="announce-main__form-error-message"></small>
-          <legend>Você deseja:</legend>
-          <div class="intention-fieldset__checkbox-input-div">
-            <label for="sell-checkbox">
+          <legend class="announce-main__form-legend">Você deseja:</legend>
+          <div class="announce-main__form-intention-container">
+            <div class="announce-main__form-group-intention">
+              <label for="sell-checkbox" class="announce-main__form-label-intention">
+                Vender
+              </label>
               <input
                 id="sell-checkbox"
-                class="announce-main__form-input"
-                name="intention"
-                type="checkbox"
-                value="trade"
-              />
-              Vender
-            </label>
-            <label for="trade-checkbox">
-              <input
-                id="trade-checkbox"
-                class="announce-main__form-input"
+                class="main__form-input-intention"
                 name="intention"
                 type="checkbox"
                 value="sell"
               />
-              Trocar
-            </label>
+            </div>
+
+            <div class="announce-main__form-group-intention">
+              <label for="trade-checkbox" class="announce-main__form-label-intention">
+                Trocar
+              </label>
+              <input
+                id="trade-checkbox"
+                class="main__form-input-intention"
+                name="intention"
+                type="checkbox"
+                value="trade"
+              />
+            </div>
           </div>
         </fieldset>
 
         <fieldset id="contact-fieldset" class="announce-main__form-fieldset">
           <small class="announce-main__form-error-message"></small>
-          <legend>Contatos</legend>
-          <div class="announce-main__form-group">
-            <div>
+          <legend class="announce-main__form-legend">Contatos</legend>
+          <div>
+            <div class="announce-main__form-group">
               <label class="announce-main__form-label" for="email-input">Email</label>
               <input class="announce-main__form-input" id="email-input" name="email" type="email" />
               <small class="announce-main__form-error-message"></small>
             </div>
 
-            <div>
+            <div class="announce-main__form-group">
               <label class="announce-main__form-label" for="whatsapp-input">WhatsApp</label>
               <input
                 class="announce-main__form-input"
@@ -136,7 +141,7 @@
           </div>
         </fieldset>
 
-        <button type="submit">Postar anuncio</button>
+        <button type="submit" class="announce-main__form-button">Postar anuncio</button>
       </form>
     </main>
 
