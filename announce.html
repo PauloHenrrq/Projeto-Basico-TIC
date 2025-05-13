@@ -1,153 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anunciar</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class="announce-page">
-    <header class="header">
-      <nav class="header__nav">
-        <span class="header__logo">
-          <a href="index.html">
-            <img
-              src="assets/images/pokeball-pokemon-svgrepo-com.svg"
-              alt="imagem de uma pokebola"
-            />
-          </a>
-        </span>
-        <ul class="header__menu">
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="index.html">Home</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="ads.html">Ver anúncios</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link header__menu-link--color" href="announce.html">Anunciar</a>
-          </li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anunciar</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/announce.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body class="announce-page">
+  <header class="header">
+    <nav class="header__nav">
+      <span class="header__logo">
+        <a href="#">
+          <img src="assets/pokeball-pokemon-svgrepo-com.svg" alt="imagem de uma pokebola" />
+        </a>
+      </span>
+      <ul class="header__menu">
+        <a class="header__menu-link" href="index.html">Home</a>
+        <a class="header__menu-link" href="ads.html">Anúncios</a>
+        <a class="header__menu-link-selected" href="announce.html">Anunciar</a>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="announce-main">
+    <h2 class="announce-h2">
+      Criação de Anúncio
+    </h2>
+
+    <form id="form" class="announce-main__form">
+      <div id="title-container" class="announce-main__form-group">
+        <label class="announce-main__form-label" for="title-input">Título</label>
+        <input class="announce-main__form-input" id="title-input" name="title" type="text" placeholder="Escreva um titulo" required autofocus />
+        <small class="announce-main__form-error-message"></small>
+      </div>
+
+      <div id="price-container" class="announce-main__form-group">
+        <label class="announce-main__form-label" for="price-input">Preço</label>
+
+        <input class="announce-main__form-input" id="price-input" name="price" type="text" placeholder="R$ 0,00"
+          required />
+        <small class="announce-main__form-error-message"></small>
+      </div>
+
+      <div id="description-container" class="announce-main__form-group">
+        <label class="announce-main__form-label" for="description-input">Descrição</label>
+        <textarea class="announce-main__form-textarea" id="description-input" name="description"
+          placeholder="Descreva a carta: edição, condição, idioma, raridade, etc." required></textarea>
+        <small class="announce-main__form-error-message"></small>
+      </div>
+
+      <div id="image-container" class="announce-main__form-group">
+        <label class="announce-main__form-label" for="image-input">Imagem da Carta</label>
+
+        <input class="announce-main__form-input" id="image-input" name="card-image" type="file" accept="image/*"
+          required />
+
+        <small class="announce-main__form-error-message"></small>
+      </div>
+
+      <fieldset id="intention-fieldset" class="announce-main__form-fieldset intention-fieldset">
+        <small class="announce-main__form-error-message"></small>
+        <legend class="announce-main__form-legend">Você deseja:</legend>
+        <div class="announce-main__form-intention-container">
+          <div class="announce-main__form-group-intention">
+            <label for="sell-checkbox" class="announce-main__form-label-intention">
+              Vender
+            </label>
+            <input id="sell-checkbox" class="announce-main__form-input-intention" name="intention" type="checkbox"
+              value="sell" />
+          </div>
+
+          <div class="announce-main__form-group-intention">
+            <label for="trade-checkbox" class="announce-main__form-label-intention">
+              Trocar
+            </label>
+            <input id="trade-checkbox" class="announce-main__form-input-intention" name="intention" type="checkbox"
+              value="trade" />
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset id="contact-fieldset" class="announce-main__form-fieldset">
+        <small class="announce-main__form-error-message"></small>
+        <legend class="announce-main__form-legend">Contatos</legend>
+        <div>
+          <div class="announce-main__form-group">
+            <label class="announce-main__form-label" for="email-input">Email</label>
+            <input class="announce-main__form-input" id="email-input" name="email" type="email" placeholder="exemplo@gmail.com"/>
+            <small class="announce-main__form-error-message"></small>
+          </div>
+
+          <div class="announce-main__form-group">
+            <label class="announce-main__form-label" for="whatsapp-input">WhatsApp</label>
+            <input class="announce-main__form-input" id="whatsapp-input" name="whatsapp" type="tel"
+              placeholder="exemplo: 85912345678" />
+            <small class="announce-main__form-error-message"></small>
+          </div>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="announce-main__form-button">Postar anuncio</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__section footer__left">
+        <h4>Equipe</h4>
+        <div class="footer__team-columns">
+          <div class="footer__team-col">
+            <a class="footer__team-link" target="_blank" href="https://github.com/SkarZehp">Guilherme Aguiar</a>
+            <a class="footer__team-link" target="_blank" href="https://github.com/PauloHenrrq">Paulo Henrique</a>
+            <a class="footer__team-link" target="_blank" href="https://github.com/levyvianas">Levy Vianna</a>
+          </div>
+          <div class="footer__team-col">
+            <a class="footer__team-link" target="_blank" href="https://github.com/Joseneww">José Roberto</a>
+            <a class="footer__team-link" target="_blank" href="https://github.com/emanuelfelicio">Emanuel Felício</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__section footer__right">
+        <h4>Siga-nos</h4>
+        <ul class="footer__social-links">
+          <li><a class="footer__social-link">Facebook</a></li>
+          <li><a class="footer__social-link">Twitter</a></li>
+          <li><a class="footer__social-link">Instagram</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </div>
 
-    <main class="announce-main">
-      <form id="form" class="announce-main__form">
-        <div id="title-container" class="announce-main__form-group">
-          <label class="announce-main__form-label" for="title-input">Título</label>
-          <input
-            class="announce-main__form-input"
-            id="title-input"
-            name="title"
-            type="text"
-            required
-            autofocus
-          />
-          <small class="announce-main__form-error-message"></small>
-        </div>
+    <div class="footer__copyright">
+      <p>&copy; 2025 Pokemon Market</p>
+    </div>
 
-        <div id="price-container" class="announce-main__form-group">
-          <label class="announce-main__form-label" for="price-input">Preço</label>
+    <nav class="footer__nav">
+      <ul class="footer__menu">
+        <li class="footer__menu-item"><a class="footer__menu-link">Política de Privacidade</a></li>
+        <li class="footer__menu-item"><a class="footer__menu-link">Termos de Serviço</a></li>
+        <li class="footer__menu-item"><a class="footer__menu-link">Contato</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="/js/announce.js"></script>
+</body>
 
-          <input
-            class="announce-main__form-input"
-            id="price-input"
-            name="price"
-            type="text"
-            placeholder="R$ 0,00"
-            required
-          />
-          <small class="announce-main__form-error-message"></small>
-        </div>
-
-        <div id="description-container" class="announce-main__form-group">
-          <label class="announce-main__form-label" for="description-input">Descrição</label>
-          <textarea
-            class="announce-main__form-textarea"
-            id="description-input"
-            name="description"
-            placeholder="Descreva a carta: edição, condição, idioma, raridade, etc."
-            required
-          ></textarea>
-          <small class="announce-main__form-error-message"></small>
-        </div>
-
-        <div id="image-container" class="announce-main__form-group">
-          <label class="announce-main__form-label" for="image-input">Imagem da Carta</label>
-
-          <input
-            class="announce-main__form-input"
-            id="image-input"
-            name="card-image"
-            type="file"
-            accept="image/*"
-            required
-          />
-
-          <small class="announce-main__form-error-message"></small>
-        </div>
-
-        <fieldset id="intention-fieldset" class="announce-main__form-fieldset intention-fieldset">
-          <small class="announce-main__form-error-message"></small>
-          <legend class="announce-main__form-legend">Você deseja:</legend>
-          <div class="announce-main__form-intention-container">
-            <div class="announce-main__form-group-intention">
-              <label for="sell-checkbox" class="announce-main__form-label-intention">
-                Vender
-              </label>
-              <input
-                id="sell-checkbox"
-                class="announce-main__form-input-intention"
-                name="intention"
-                type="checkbox"
-                value="sell"
-              />
-            </div>
-
-            <div class="announce-main__form-group-intention">
-              <label for="trade-checkbox" class="announce-main__form-label-intention">
-                Trocar
-              </label>
-              <input
-                id="trade-checkbox"
-                class="announce-main__form-input-intention"
-                name="intention"
-                type="checkbox"
-                value="trade"
-              />
-            </div>
-          </div>
-        </fieldset>
-
-        <fieldset id="contact-fieldset" class="announce-main__form-fieldset">
-          <small class="announce-main__form-error-message"></small>
-          <legend class="announce-main__form-legend">Contatos</legend>
-          <div>
-            <div class="announce-main__form-group">
-              <label class="announce-main__form-label" for="email-input">Email</label>
-              <input class="announce-main__form-input" id="email-input" name="email" type="email" />
-              <small class="announce-main__form-error-message"></small>
-            </div>
-
-            <div class="announce-main__form-group">
-              <label class="announce-main__form-label" for="whatsapp-input">WhatsApp</label>
-              <input
-                class="announce-main__form-input"
-                id="whatsapp-input"
-                name="whatsapp"
-                type="tel"
-                placeholder="exemplo: 85912345678"
-              />
-              <small class="announce-main__form-error-message"></small>
-            </div>
-          </div>
-        </fieldset>
-
-        <button type="submit" class="announce-main__form-button">Postar anuncio</button>
-      </form>
-    </main>
-
-    <footer class="footer"></footer>
-    <script src="/js/announce.js"></script>
-  </body>
 </html>

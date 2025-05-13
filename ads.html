@@ -1,41 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anúncios</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class="ads-page">
-    <header class="header">
-      <nav class="header__nav">
-        <span class="header__logo">
-          <a href="index.html">
-            <img
-              src="assets/images/pokeball-pokemon-svgrepo-com.svg"
-              alt="imagem de uma pokebola"
-            />
-          </a>
-        </span>
-        <ul class="header__menu">
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="index.html">Home</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="ads.html">Ver anúncios</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link header__menu-link--color" href="announce.html">Anunciar</a>
-          </li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anúncios</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/ads.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <span class="header__logo">
+        <a href="#">
+          <img src="assets/pokeball-pokemon-svgrepo-com.svg" alt="imagem de uma pokebola" />
+        </a>
+      </span>
+      <ul class="header__menu">
+        <a class="header__menu-link" href="index.html">Home</a>
+        <a class="header__menu-link-selected" href="ads.html">Anúncios</a>
+        <a class="header__menu-link" href="announce.html">Anunciar</a>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="ads-main">
+    <section id="card-container-id" class="card-container">
+      <div class="card">
+        <div class="card-img">
+          <img src="assets/charizard.webp" alt="Charizard" class="card-image">
+        </div>
+        <div class="card-info">
+          <h2 class="card-title">
+            Charizard
+          </h2>
+          <p class="card-price">
+            R$ 169,00
+          </p>
+          <p class="card-description">
+            Charizard lendário - edição 1999
+          </p>
+          <div class="intention-div">
+            <span class="intention-tag">
+              Trocar
+            </span>
+            <span class="intention-tag">
+              Vender
+            </span>
+          </div>
+          <p class="card-email">
+            Email: fulano@gmail.com
+          </p>
+          <p class="card-whatsapp">
+            Whatsapp: 85999999999
+          </p>
+          <button class="card-contact">
+            Entrar em Contato
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="assets/pikachu.png" alt="pikachu" class="card-image">
+        </div>
+        <div class="card-info">
+          <h2 class="card-title">
+            Pikachu
+          </h2>
+          <p class="card-price">
+            R$ 149,00
+          </p>
+          <p class="card-description">
+            Pikachu - edição 1999
+          </p>
+          <div class="intention-div">
+            <span class="intention-tag">
+              Trocar
+            </span>
+            <span class="intention-tag">
+              Vender
+            </span>
+          </div>
+          <p class="card-email">
+            Email: fulano2@gmail.com
+          </p>
+          <p class="card-whatsapp">
+            Whatsapp: 85888888888
+          </p>
+          <button class="card-contact">
+            Entrar em Contato
+          </button>
+        </div>
+      </div>
+            <div class="card">
+        <div class="card-img">
+          <img src="assets/Alakazam.png" alt="Alakazam" class="card-image">
+        </div>
+        <div class="card-info">
+          <h2 class="card-title">
+            Alakazam
+          </h2>
+          <p class="card-price">
+            R$ 179,00
+          </p>
+          <p class="card-description">
+            Alakazam - edição 1999
+          </p>
+          <div class="intention-div">
+            <span class="intention-tag">
+              Trocar
+            </span>
+            <span class="intention-tag">
+              Vender
+            </span>
+          </div>
+          <p class="card-email">
+            Email: fulano3@gmail.com
+          </p>
+          <p class="card-whatsapp">
+            Whatsapp: 85777777777
+          </p>
+          <button class="card-contact">
+            Entrar em Contato
+          </button>
+        </div>
+      </div>
+            <div class="card">
+        <div class="card-img">
+          <img src="assets/Karaidon.webp" alt="Karaidon" class="card-image">
+        </div>
+        <div class="card-info">
+          <h2 class="card-title">
+            Karaidon
+          </h2>
+          <p class="card-price">
+            R$ 159,00
+          </p>
+          <p class="card-description">
+            Koraidon - edição 1999
+          </p>
+          <div class="intention-div">
+            <span class="intention-tag">
+              Trocar
+            </span>
+            <span class="intention-tag">
+              Vender
+            </span>
+          </div>
+          <p class="card-email">
+            Email: fulano4@gmail.com
+          </p>
+          <p class="card-whatsapp">
+            Whatsapp: 85666666666
+          </p>
+          <button class="card-contact">
+            Entrar em Contato
+          </button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__section footer__left">
+        <h4>Equipe</h4>
+        <div class="footer__team-columns">
+          <div class="footer__team-col">
+            <a class="footer__team-link" target="_blank" href="https://github.com/SkarZehp">Guilherme Aguiar</a>
+            <a class="footer__team-link" target="_blank" href="https://github.com/PauloHenrrq">Paulo Henrique</a>
+            <a class="footer__team-link" target="_blank" href="https://github.com/levyvianas">Levy Vianna</a>
+          </div>
+          <div class="footer__team-col">
+            <a class="footer__team-link" target="_blank" href="https://github.com/Joseneww">José Roberto</a>
+            <a class="footer__team-link" target="_blank" href="https://github.com/emanuelfelicio">Emanuel Felício</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__section footer__right">
+        <h4>Siga-nos</h4>
+        <ul class="footer__social-links">
+          <li><a class="footer__social-link">Facebook</a></li>
+          <li><a class="footer__social-link">Twitter</a></li>
+          <li><a class="footer__social-link">Instagram</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </div>
 
-    <main class="ads-main">
-      <div id="card-container-id" class="card-container"></div>
-    </main>
+    <div class="footer__copyright">
+      <p>&copy; 2025 Pokemon Market</p>
+    </div>
 
-    <footer class="footer"></footer>
-    <script src="/js/ads.js"></script>
-  </body>
+    <nav class="footer__nav">
+      <ul class="footer__menu">
+        <li class="footer__menu-item"><a class="footer__menu-link">Política de Privacidade</a></li>
+        <li class="footer__menu-item"><a class="footer__menu-link">Termos de Serviço</a></li>
+        <li class="footer__menu-item"><a class="footer__menu-link">Contato</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="/js/ads.js"></script>
+</body>
+
 </html>

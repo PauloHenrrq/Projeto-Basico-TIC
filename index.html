@@ -1,44 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokemon Market</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class="home-page">
-    <header class="header">
-      <nav class="header__nav">
-        <span class="header__logo">
-          <a href="index.html">
-            <img
-              src="assets/images/pokeball-pokemon-svgrepo-com.svg"
-              alt="imagem de uma pokebola"
-            />
-          </a>
-        </span>
-        <ul class="header__menu">
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="index.html">Home</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="ads.html">Ver anúncios</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link header__menu-link--color" href="announce.html">Anunciar</a>
-          </li>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Card do Charizard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+  <header>
+    <nav class="header__nav">
+      <span class="header__logo">
+        <a href="#">
+          <img src="assets/pokeball-pokemon-svgrepo-com.svg" alt="imagem de uma pokebola" />
+        </a>
+      </span>
+      <ul class="header__menu">
+        <a class="header__menu-link-selected" href="index.html">Home</a>
+        <a class="header__menu-link" href="ads.html">Anúncios</a>
+        <a class="header__menu-link" href="announce.html">Anunciar</a>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="card-main">
+    <a class="card">
+      <img src="assets/charizard.webp" alt="Charizard" class="card-img">
+      <p class="preco">R$ 169,00</p>
+      <p class="descricao">Charizard lendário<br>- edição 1999</p>
+      <div class="botoes">
+        <button class="btn btn-azul">trocar</button>
+        <button class="btn btn-azul">vender</button>
+      </div>
+      <button class="btn btn-verde">Ver conteúdo</button>
+    </a>
+    <a class="card">
+      <img src="assets/pikachu.png" alt="pikachu" class="card-img">
+      <p class="preco">R$ 149,00</p>
+      <p class="descricao">Pikachu<br>- edição 1999</p>
+      <div class="botoes">
+        <button class="btn btn-azul">trocar</button>
+        <button class="btn btn-azul">vender</button>
+      </div>
+      <button class="btn btn-verde">Ver conteúdo</button>
+    </a>
+    <a class="card">
+      <img src="assets/Alakazam.png" alt="Alakazam" class="card-img">
+      <p class="preco">R$ 179,00</p>
+      <p class="descricao">Alakazam<br>- edição 1999</p>
+      <div class="botoes">
+        <button class="btn btn-azul">trocar</button>
+        <button class="btn btn-azul">vender</button>
+      </div>
+      <button class="btn btn-verde">Ver conteúdo</button>
+    </a>
+    <a class="card">
+      <img src="assets/Karaidon.webp" alt="Karaidon" class="card-img">
+      <p class="preco">R$ 159,00</p>
+      <p class="descricao">Koraidon<br>- edição 1999</p>
+      <div class="botoes">
+        <button class="btn btn-azul">trocar</button>
+        <button class="btn btn-azul">vender</button>
+      </div>
+      <button class="btn btn-verde">Ver conteúdo</button>
+    </a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__section footer__left">
+        <h4>Equipe</h4>
+        <div class="footer__team-columns">
+          <div class="footer__team-col">
+            <a class="footer__team-link" target="_blank" href="https://github.com/SkarZehp">Guilherme Aguiar</a>
+            <a class="footer__team-link" target="_blank" href="https://github.com/PauloHenrrq">Paulo Henrique</a>
+            <a class="footer__team-link" target="_blank" href="https://github.com/levyvianas">Levy Vianna</a>
+          </div>
+          <div class="footer__team-col">
+            <a class="footer__team-link" target="_blank" href="https://github.com/Joseneww">José Roberto</a>
+            <a class="footer__team-link" target="_blank" href="https://github.com/emanuelfelicio">Emanuel Felício</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__section footer__right">
+        <h4>Siga-nos</h4>
+        <ul class="footer__social-links">
+          <li><a href="" class="footer__social-link">Facebook</a></li>
+          <li><a href="" class="footer__social-link">Twitter</a></li>
+          <li><a href="" class="footer__social-link">Instagram</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </div>
 
-    <main class="home-main">
-      <section class="gallery">
-        <article class="gallery__item"></article>
-        <article class="gallery__item"></article>
-      </section>
-    </main>
+    <div class="footer__copyright">
+      <p>&copy; 2025 Pokemon Market</p>
+    </div>
 
-    <footer class="footer"></footer>
-    <script src="/js/index.js"></script>
-  </body>
+    <nav class="footer__nav">
+      <ul class="footer__menu">
+        <li class="footer__menu-item"><a class="footer__menu-link">Política de Privacidade</a></li>
+        <li class="footer__menu-item"><a class="footer__menu-link">Termos de Serviço</a></li>
+        <li class="footer__menu-item"><a class="footer__menu-link">Contato</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+
 </html>

@@ -1,0 +1,99 @@
+.card-main {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid red;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 15px;
+  transform: scale(1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: appear 1s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.preco {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.descricao {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  gap: 50px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 2px solid;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-azul {
+  color: #007bff;
+  border-color: #007bff;
+  background-color: transparent;
+}
+
+.btn-verde {
+  color: green;
+  border-color: green;
+  background-color: transparent;
+}
+
+.card:hover .btn-verde {
+  background-color: green;
+  color: #fff;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateX(1000px);
+  }
+  80% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
