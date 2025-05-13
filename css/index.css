@@ -2,12 +2,13 @@
   font-family: 'Comic Sans MS', cursive, sans-serif;
   display: flex;
   justify-content: space-evenly;
-  gap: 25px;
   flex-wrap: wrap;
 }
 
 .card {
-  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: inherit;
   border: 2px solid red;
   border-radius: 15px;
@@ -15,10 +16,6 @@
   width: 250px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   box-shadow: 2px 2px 15px;
   transform: scale(1);
   cursor: pointer;
@@ -95,5 +92,38 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .card {
+    width: 90%;
+    padding: 16px;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .btn {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .preco {
+    font-size: 20px;
+  }
+
+  .descricao {
+    font-size: 14px;
   }
 }
